@@ -24,5 +24,5 @@ $(call inherit-product, device/samsung/ms013g/device.mk)
 PRODUCT_DEVICE := ms013g
 PRODUCT_NAME := full_ms013g
 PRODUCT_BRAND := samsung
-PRODUCT_MODEL := ms013g
+PRODUCT_MODEL := SM-G7102
 PRODUCT_MANUFACTURER := samsung
