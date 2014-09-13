@@ -1,4 +1,4 @@
-# proprietary files for falcon
+# proprietary files for ms013g
 
 # Sensors
 lib/hw/sensors.msm8226.so
