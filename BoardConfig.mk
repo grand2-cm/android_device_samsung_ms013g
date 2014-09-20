@@ -38,5 +38,8 @@ BOARD_USERDATAIMAGE_PARTITION_SIZE := 5555010560
 # Recovery
 TARGET_RECOVERY_FSTAB := $(LOCAL_PATH)/rootdir/etc/fstab.qcom
 
+# Disable initlogo, Samsungs framebuffer is weird
+TARGET_NO_INITLOGO := true
+
 # inherit from the proprietary version
 -include vendor/samsung/ms013g/BoardConfigVendor.mk
