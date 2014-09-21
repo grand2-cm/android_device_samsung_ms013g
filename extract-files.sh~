@@ -1,0 +1,19 @@
+
+# A hack to pull the binary files from a pre-existing build
+# of this cyanogenmod (i.e. a nightly)
+# Alex Knaust 2013-05-02
+ 
+DEVICE=grouper
+MANUFACTURER=asus
+ 
+# Path to the unzipped nightly with the correct blobs
+NIGHTLY=~/grouper-nightly
+ 
+BASE=../../../vendor/$MANUFACTURER/$DEVICE/proprietary
+ 
+mkdir -p $BASE
+for FILE in `cat proprietary-blobs.txt | grep -v "^#"`; do
+    cp -v $NIGHTLY/$FILE $BASE/
+done
+ 
+./setup-makefiles.sh
