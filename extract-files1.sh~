@@ -4,4 +4,4 @@ set -e
 
 export VENDOR=samsung
 export DEVICE=ms013g
-./../../samsung/msm8226-common/extract-files.sh $@
+./../../$VENDOR/msm8226-common/extract-files.sh $@
