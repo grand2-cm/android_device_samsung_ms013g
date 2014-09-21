@@ -1,6 +1,0 @@
-# proprietary files for ms013g
-
-# Sensors
-vendor/lib/hw/sensors.msm8226.so
-vendor/lib/hw/power.qcom.so
-vendor/lib/hw/lights.msm8226.so
